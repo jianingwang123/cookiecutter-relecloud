@@ -1,5 +1,5 @@
 ---
-\{% extends 'abbreviations.txt' %}
+'{' '%' extends 'abbreviations.txt' '%''}'
 \{% block cc %}
 page_type: sample
 languages:
