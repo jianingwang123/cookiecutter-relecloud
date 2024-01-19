@@ -1,6 +1,6 @@
 ---
 '{' '%' extends 'abbreviations.txt' '%''}'
-\{% block cc %}
+'{' '%' block cc '%' '}'
 page_type: sample
 languages:
 - azdeveloper
