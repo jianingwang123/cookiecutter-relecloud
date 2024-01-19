@@ -11,6 +11,18 @@ languages:
 - scss
 products:
 - azure
+# {% if cookiecutter.project_host == "aca" %}
+- azure-container-apps
+# {% endif %}
+# {% if cookiecutter.project_host == "appservice" %}
+- azure-app-service
+# {% endif %}
+# {% if "postgres" in cookiecutter.db_resource %}
+- azure-postgresql
+# {% endif %}
+# {% if "cosmos" in cookiecutter.db_resource %}
+- azure-cosmos-db
+# {% endif %}
 - azure-pipelines
 urlFragment: azure-{{cookiecutter.project_backend}}-{{cookiecutter.db_resource}}-{{cookiecutter.project_host}}
 name: Deploy {{web_framework}} Application with {{db}} via {{azure_host}} (Python)
